@@ -22,3 +22,18 @@ a{
 li a:hover{
     background-color: rgb(206, 45, 45);
 }
+h1{
+    font-size: 30px;
+}
+h2{
+    margin-left: 20px;
+}
+p, #p2{
+    font-size: 21px;
+    margin-inline: 30px;
+    text-align: justify;
+}
+#vantagens_git{
+    margin-inline: 80px;
+    font-size: 17px;
+}
