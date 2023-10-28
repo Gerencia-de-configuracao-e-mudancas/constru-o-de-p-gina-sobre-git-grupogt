@@ -1,0 +1,7 @@
+Imagem do criador do git - https://ocidenttal.medium.com/a-hist%C3%B3ria-e-arquitetura-do-git-e713e0cfe07c;
+
+Referência com relação ao conteúdo - 
+
+https://www.dio.me/articles/a-importancia-de-se-usar-o-git-e-o-github;
+
+https://www.oficinadanet.com.br/post/16111-o-que-e-e-como-funciona-o-git-e-github
