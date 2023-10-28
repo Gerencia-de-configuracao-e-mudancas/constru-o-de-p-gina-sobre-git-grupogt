@@ -1,38 +1,115 @@
-#barra-navegação{
-    margin-top: -20px;
-    background-color: rgb(224, 45, 45);
-    height: 90px;
-    width: 100%;
+@charset "UTF-8";
+
+/*Setando configurações gerais*/
+*{
+    font-family: sans-serif;
 }
+
+/*Estilziando textos*/
+div > p{
+    font-size: 1em;
+}
+
+#navi{
+    display: flex;
+    flex-direction: row;
+}
+
+/*Estilos da barra de navegação superior*/
+#nav-gation{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(255, 224, 224);
+    align-items: center;
+}
+
+/*Definindo ajustes no corpo da página*/
+body{
+    margin: 0;
+    padding: 0 10px;
+}
+
+/*Ajuste na logo do git*/
+nav > img{
+    width: 120px;
+    margin: 10px 0 10px 20px;
+}
+
+/*Ajustando as listas em geral*/
 ul{
     list-style: none;
     display: flex;
+    flex-direction: column;
+    gap: 10px;
     justify-content: flex-end;
 }
-li{
-    float: left;
-   
+
+/*Usando detalhes*/
+span{
+    font-weight: bold;
+    font-size: .95em;
+    background-color: rgb(240, 80, 51);
+    color: rgb(255, 255, 255);
+    border-radius: 3px;
 }
+
+/*principal da pagina*/
+.corpo{
+    width: 70%;
+}
+
+/*Imagem do criador do linux e git*/
+figure > img{
+    width: 500px;
+    margin: auto;
+    display: block;
+}
+
+figcaption{
+    text-align: center;
+    padding: 5px;
+    font-weight: bold;
+}
+
+figure{
+    margin: 55px;
+}
+
+/*Estilo geral dos links da página*/
 a{
     display: block;
+    font-weight: bold;
     color: rgb(39, 39, 39);
-    padding: 35px 16px;
-    text-decoration: none;;
+    padding: 10px 16px;
+    border-radius: 15px;
+    text-decoration: none;
+    transition: all .5s;
 }
+
+/*Animação quando ocorre a interação com os links*/
 li a:hover{
-    background-color: rgb(206, 45, 45);
+    background-color: rgb(177, 66, 66);
+    transition: all .5s;
 }
+
+/*Estiizando título principal*/
 h1{
     font-size: 30px;
 }
+
+/*Estilizando título secundário*/
 h2{
     margin-left: 20px;
 }
+
+/*Ajuste geral no parágrafos da página*/
 p, #p2{
     font-size: 21px;
     margin-inline: 30px;
     text-align: justify;
 }
+
+/*Lista com as vantegens do Git*/
 #vantagens_git{
     margin-inline: 80px;
     font-size: 17px;

@@ -1,64 +1,113 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Git</title>
     <link rel="stylesheet" href="estilos.css">
 </head>
-<body>
-    <div id="barra-navegação">
-        <nav>
-            <ul>
-                <li>
-                    <a href="#historia">História do git </a>
-                </li>
-                <li>
-                    <a href="#">O que é git? </a>
-                </li>
-                <li>
-                    <a href="#">Princípais comandos</a>
-                </li>
-            </ul>
-        </nav>
 
-    </div>
-    <div>
+<body>
+
+    <nav id="nav-gation">
+        <img src="./img/git-icon.png" alt="Logo do git">
+        <ul id="navi">
+            <li>
+                <a href="#historia">História do git </a>
+            </li>
+            <li>
+                <a href="#o que é">O que é git? </a>
+            </li>
+            <li>
+                <a href="#comandos">Principais comandos</a>
+            </li>
+        </ul>
+    </nav>
+
+
+    <div class="corpo">
         <h1>Conheça o git:</h1><br>
         <h2 id="historia">História</h2>
         <p>
-            Como muitas coisas na vida, o Git começou com um pouco de destruição criativa e uma ardente controvérsia.
+            Como muitas coisas na vida, o <span>Git começou com um pouco de destruição criativa e uma ardente
+                controvérsia.</span>
             O núcleo (kernel) do Linux é um projeto de código aberto com um escopo bastante grande.
-           A maior parte da vida da manutenção do núcleo o Linux (1991-2002), as mudanças no código eram compartilhadas como correções e arquivos. 
-           Em 2002, o projeto do núcleo do Linux começou usar uma DVCS proprietária chamada BitKeeper.<br><br>
-           Em 2005, a relação entre a comunidade que desenvolveu o núcleo do Linux e a empresa que desenvolveu BitKeeper quebrou em pedaços, e a ferramenta passou a ser paga. Isto alertou a comunidade que desenvolvia o Linux (e especialmente Linus Torvalds, o criador do Linux) a desenvolver a sua própria ferramenta baseada em lições aprendidas ao usar o BitKeeper. 
-           Algumas metas do novo sistema era os seguintes:<br>
-           <p id="vantagens_git"> 
-           1- Velocidade.<br>
-           2- Projeto simples.<br>
-           3- Forte suporte para desenvolvimento não-linear (milhares de ramos paralelos).<br>
-           4- Completamente distribuído.<br>
-           5- Capaz de lidar com projetos grandes como o núcleo o Linux com eficiência (velocidade e tamanho dos dados).<br>
+            A maior parte da vida da manutenção do núcleo o Linux (1991-2002), as mudanças no código eram compartilhadas
+            como correções e arquivos.
+            Em 2002, o projeto do núcleo do Linux começou usar uma DVCS proprietária chamada BitKeeper.<br><br>
+            Em 2005, a relação entre a comunidade que desenvolveu o núcleo do Linux e a empresa que desenvolveu
+            BitKeeper quebrou em pedaços, e a ferramenta passou a ser paga. Isto alertou a comunidade que desenvolvia o
+            Linux (e especialmente Linus Torvalds, o criador do Linux) a <span>
+                desenvolver a sua própria ferramenta baseada em
+                lições aprendidas ao usar o BitKeeper.
+            </span>
+            Algumas metas do novo sistema era os seguintes:<br>
+        <p id="vantagens_git">
+            1- Velocidade.<br>
+            2- Projeto simples.<br>
+            3- Forte suporte para desenvolvimento não-linear (milhares de ramos paralelos).<br>
+            4- Completamente distribuído.<br>
+            5- Capaz de lidar com projetos grandes como o núcleo o Linux com eficiência (velocidade e tamanho dos
+            dados).<br>
         </p>
-        <p id="p2">
-            Desde seu nascimento em 2005, Git evoluiu e amadureceu para ser fácil de usar e ainda reter essas qualidades iniciais.
-            Ele é incrivelmente rápido, é muito eficiente com projetos grandes, e ele tem um incrível sistema de ramos para desenvolvimento não linear.
+        <p id="p1" style="font-weight: bold;">
+            Desde seu nascimento em 2005, Git evoluiu e amadureceu para ser fácil de usar e ainda reter essas qualidades
+            iniciais.
+            Ele é incrivelmente rápido, é muito eficiente com projetos grandes, e ele tem um incrível sistema de ramos
+            para desenvolvimento não linear.
+        </p>
+        <figure>
+            <img src="./img/criador-git.jpg" alt="Criador do git">
+            <figcaption>Criador do git - Linus Torvalds</figcaption>
+        </figure>
+    </div>
+    <div class="corpo">
+        <h2 id="o que é">O que é o GIT</h2>
+        <p>
+            Git é um <span>sitema de controle de versão de arquivos</span>. Através dele podemos desenvolver projetos na
+            qual
+            diversas pessoas podem contribuir simultaneamente no mesmo,
+            editando e criando novos arquivos e permitindo que os mesmos possam existir sem o risco de suas alterações
+            serem sobrescritas.
+            <span>Sendo ele o sistema de controle de versão mais usado no mundo atualmente.</span><br>
+        <p>
+            Dessa forma, o Git é um sistema de controle de versão descentralizado que permite aos desenvolvedores
+            rastrear as alterações em seu código e colaborar com outros desenvolvedores.
+            Já o GitHub é uma plataforma de hospedagem de repositórios Git que permite aos desenvolvedores <span>
+                compartilhar
+                seus códigos com o mundo.
+            </span>
+            <br>
+        </p>
+    </div>
 
-        </p>
-    </p>
-    </div>
-    <div>
-      <h2 id="o que é">O que é o GIT</h2>
-      <p>
-        Git é um sitema de controle de versão de arquivos. Através dele podemos desenvolver projetos na qual diversas pessoas podem contribuir simultaneamente no mesmo, 
-        editando e criando novos arquivos e permitindo que os mesmos possam existir sem o risco de suas alterações serem sobrescritas. 
-        Sendo ele o sistema de controle de versão mais usado no mundo atualmente.<br>
-        <p> 
-          Dessa forma, o Git é um sistema de controle de versão descentralizado que permite aos desenvolvedores rastrear as alterações em seu código e colaborar  com outros desenvolvedores.
-          Já o GitHub é uma plataforma de hospedagem de repositórios Git que permite aos desenvolvedores  compartilhar seus códigos com o mundo.
-          <br>
-        </p>
-      </p>
-    </div>
+    <section class="corpo">
+        <h2 id="comandos">Principais comandos</h2>
+
+        <div>
+            <p>A seguir, veja uma lista com os principais comandos do git. Tais comandos são úteis no que diz respeito a criação e gestão de um repositório</p>
+        </div>
+
+        <ul>
+            <li><strong>git init</strong>: Inicializa um novo repositório Git em um diretório.</li>
+            <li><strong>git clone</strong>: Clona um repositório Git existente para seu sistema local.</li>
+            <li><strong>git add</strong>: Adiciona alterações ao índice (staging area) para prepará-las para commit.
+            </li>
+            <li><strong>git commit</strong>: Registra as alterações no repositório como uma nova revisão.</li>
+            <li><strong>git pull</strong>: Atualiza seu repositório local com as alterações do repositório remoto.</li>
+            <li><strong>git push</strong>: Envia suas alterações locais para o repositório remoto.</li>
+            <li><strong>git branch</strong>: Exibe e gerencia branches (ramificações) no repositório.</li>
+            <li><strong>git checkout</strong>: Alterna entre diferentes branches e commits.</li>
+            <li><strong>git merge</strong>: Combina alterações de uma branch em outra.</li>
+            <li><strong>git log</strong>: Mostra o histórico de commits.</li>
+            <li><strong>git status</strong>: Exibe o estado atual do seu diretório de trabalho em relação ao
+                repositório.</li>
+            <li><strong>git diff</strong>: Mostra as diferenças entre alterações não registradas e o último commit.</li>
+            <li><strong>git reset</strong>: Permite desfazer commits ou reverter alterações.</li>
+        </ul>
+
+    </section>
 </body>
+
 </html>
